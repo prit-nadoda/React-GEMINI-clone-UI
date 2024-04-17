@@ -18,11 +18,11 @@ const Sidebar = () => {
     },
     {
       icon: "fa fa-history",
-      text: "Help",
+      text: "Activity",
     },
     {
       icon: "fa fa-cog",
-      text: "Help",
+      text: "Settings",
     },
   ];
   return (
