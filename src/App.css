@@ -7,6 +7,7 @@
 
 body {
   width: 100%;
+  background: #131314;
 }
 
 .app-container {
@@ -178,24 +179,35 @@ body {
 }
 
 .main-section {
-  height: 100vh;
+  width: calc(100% - 300px);
+  display: flex;
+  justify-content: center;
+  left: 0;
+  width: 100%;
   margin-left: 300px;
-  flex-grow: 1;
   background: #131314;
 }
 
-.main-section .navbar {
+.navbar {
+  width: calc(100% - 300px);
+  min-width: 400px;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  margin: 12px 16px 10px 16px;
-  padding: 6px 0px;
+  background: #131314;
+  margin: 0px 16px 0px 300px;
+  padding: 35px 6px;
+  z-index: 1000;
 }
 
 .navbar .brand {
   font-size: 20px;
   color: #fff;
+  margin-left: 25px;
 }
 
 .brand i {
@@ -209,10 +221,191 @@ body {
   height: 38px;
   width: 38px;
   padding: 4px;
+  margin-right: 20px;
 }
 
 .profile img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+}
+.main-section .chat-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.main-section .welcome {
+  width: 100%;
+  flex-grow: 1;
+  padding: 0 200px;
+}
+.welcome .line {
+  font-size: 56px;
+  width: 100%;
+  color: #444746;
+  line-height: 64px;
+  font-weight: 500;
+}
+
+.welcome .l1 {
+  width: fit-content;
+  background-image: linear-gradient(to right, #5d80ea, #d66470);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+.main-bottom {
+  padding: 0 200px;
+  width: calc(100% - 300px);
+  margin-left: 300px;
+  min-width: 400px;
+  position: fixed;
+  bottom: 0;
+  background: #131314;
+  min-width: 400px;
+}
+
+.main-bottom .input-field {
+  height: 60px;
+  border-radius: 100px;
+  background: #1e1f20;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.input-field .input {
+  flex-grow: 1;
+}
+
+.input-field input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: transparent;
+}
+
+.input-field .icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+}
+.input-field .icons i {
+  color: #424443;
+  font-size: 20px;
+}
+
+.main-bottom .bottom-text {
+  text-align: center;
+  color: #d6d4d4;
+  font-size: 11px;
+  margin: 20px;
+}
+
+.main-bottom a {
+  color: #d6d4d4;
+}
+
+.main-cards {
+  margin-top: 70px;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
+  padding: 0 200px;
+}
+.main-cards .card {
+  background: #1e1f20;
+  top: 0;
+  width: 215px;
+  height: 215px;
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.main-cards .card .card-text {
+  height: 140px;
+}
+
+.main-cards .card .icon {
+  width: 100%;
+}
+
+.main-cards .card .icon .wrapper {
+  font-size: 20px;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  background: #131314;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  margin-left: 140px;
+}
+
+.main-cards .card:hover {
+  background: #2b2b2c;
+}
+
+.long-card {
+  margin: 0 200px;
+  display: flex;
+  background: #1a1a1c;
+  padding: 20px;
+  margin-top: 20px;
+  height: 170px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.long-card .card-icon {
+  height: 100%;
+  color: #3a3a3b;
+}
+
+.long-card .card-icon i {
+  font-size: 30px;
+}
+
+.long-card .col-2 {
+  margin: 0 20px;
+}
+.long-card .card-text {
+  color: #abc0d8;
+  width: 100%;
+  height: 100px;
+}
+
+.long-card button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 100px;
+  font-weight: 600;
+  margin-right: 15px;
+  background: transparent;
+  font-size: 15px;
+  color: #8ebef5;
+}
+.empty {
+  background: transparent;
+  height: 500px;
+  width: 500px;
+
+  color: #131314;
 }
