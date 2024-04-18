@@ -21,6 +21,7 @@ body {
   background-color: #1e1f20;
   padding: 20px;
   height: 100vh;
+  z-index: 2000;
 }
 
 .sidebar .menu-icon {
@@ -269,6 +270,7 @@ body {
   bottom: 0;
   background: #131314;
   min-width: 400px;
+  box-shadow: rgba(19, 19, 20, 0.8) 0px 50px 100px 110px;
 }
 
 .main-bottom .input-field {
